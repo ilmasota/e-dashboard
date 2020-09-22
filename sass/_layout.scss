@@ -1,0 +1,108 @@
+/* global */
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body{
+   background-color: $background-color;
+   font-family: $font;
+   font-size: $font-size;
+}
+
+.wrapper{
+  display: flex;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+}
+
+/* sidebar */
+
+.wrapper .sidebar{
+  width: 200px;
+  height: 100%;
+  background: $menu-background-color;
+  padding: 30px 0px;
+  position: fixed;
+}
+
+.wrapper .sidebar h2{
+  color: $color-light;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.wrapper .sidebar ul{
+
+  padding-left: 0;
+}
+
+.wrapper .sidebar ul li{
+  padding: 15px;
+}
+
+.wrapper .sidebar ul li a{
+  color: $color-light;
+  font-weight: 300;
+  display: block;
+}
+
+.wrapper .sidebar ul li:hover{
+  background-color: #282828;
+}
+
+.wrapper .sidebar ul li:hover a{
+  color: #fff;
+}
+
+/* header */
+
+.wrapper .main_content .header{
+  background: #fff;
+  color: #717171;
+  border-bottom: 1px solid #e0e4e8;
+  display: flex;
+  margin: 0;
+}
+
+.header ul > *:not(:first-child) {
+  border-left: solid gray 2px;
+  height: 61px;
+  padding: 0;
+}
+
+.header li {
+  display: inline-block;
+}
+
+/* main feed */
+
+.wrapper .main_content{
+  width: 100%;
+  margin-left: 200px;
+}
+
+.wrapper .main_content .feed{
+  margin: 20px;
+  color: #717171;
+  line-height: 25px;
+}
+
+.wrapper .main_content .feed div{
+  margin-bottom: 20px;
+}
+
+/* post in feed */
+
+.post {
+  margin: 18px 18px;
+  background-color: $color-light;
+}
