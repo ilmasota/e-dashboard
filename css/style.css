@@ -2,6 +2,7 @@
 /* background */
 /* menu */
 /* line */
+/* font */
 /* fonts */
 /* font sizes */
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -368,9 +369,22 @@ ul {
   margin: 0;
 }
 
+h1 {
+  color: #a6a6a6;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 42px;
+  text-transform: uppercase;
+  padding: 19px 0 0 17px;
+  border-bottom: 1px solid #e3e3e3;
+  width: 100%;
+  padding-bottom: 3px;
+}
+
 /* sidebar */
 .wrapper .sidebar {
-  width: 200px;
+  width: 188px;
   height: 100%;
   background: #191919;
   padding: 30px 0px;
@@ -410,32 +424,46 @@ ul {
 .wrapper .main_content .header {
   background: #fff;
   color: #717171;
-  border-bottom: 1px solid #e0e4e8;
+  border-bottom: 1px solid #e3e3e3;
+  margin: 0;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
   display: -ms-flexbox;
   display: flex;
-  margin: 0;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+}
+
+.header ul {
+  padding: 0;
 }
 
 .header ul > *:not(:first-child) {
-  border-left: solid gray 2px;
+  border-left: solid #e3e3e3 1px;
   height: 61px;
   padding: 0;
 }
 
 .header li {
   display: inline-block;
+  -ms-flex-pack: center;
+      justify-content: center;
 }
 
 /* main feed */
 .wrapper .main_content {
   width: 100%;
-  margin-left: 200px;
+  margin-left: 188px;
 }
 
 .wrapper .main_content .feed {
-  margin: 20px;
   color: #717171;
   line-height: 25px;
+  margin-top: 78px;
 }
 
 .wrapper .main_content .feed div {
@@ -446,5 +474,21 @@ ul {
 .post {
   margin: 18px 18px;
   background-color: #fff;
+  display: block;
+}
+
+/* general statistic */
+.date-filter {
+  border-bottom: 1px solid #e3e3e3;
+  width: 100%;
+  padding-bottom: 3px;
+}
+
+.date-period {
+  width: 325px;
+  height: 40px;
+  border-radius: 3px;
+  border: 1px solid #e3e3e3;
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */
