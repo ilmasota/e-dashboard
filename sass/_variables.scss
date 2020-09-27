@@ -3,6 +3,7 @@
 /* background */
 $background-color: #f5f5f2;
 $color-light: #fff;
+$color-header: #9c9c9c;
 
 /* menu */
 $menu-background-color: #191919;
@@ -13,7 +14,14 @@ $line-color: #e3e3e3;
 
 /* font */
 $title-color: #a6a6a6;
+$link-color: #56819f;
+$sidebar-link-color: #999999;
 
+/* button */
+$button-color: #f58220;
+
+/* svg colors */
+$header-svg: invert(57%) sepia(0%) saturate(7363%) hue-rotate(334deg) brightness(111%) contrast(88%);
 /* fonts */
 
 $font: 'Roboto', sans-serif;
@@ -21,3 +29,5 @@ $font: 'Roboto', sans-serif;
 /* font sizes */
 
 $font-size: 16px;
+
+/* transitions */

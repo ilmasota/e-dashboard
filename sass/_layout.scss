@@ -1,5 +1,7 @@
 /* global */
 
+@import url("./css/Glyphter.css");
+
 *, *::before, *::after {
     box-sizing: border-box;
 }
@@ -16,6 +18,8 @@ body{
 
 a {
   text-decoration: none;
+  color: $link-color;
+  font-weight: 300;
 }
 
 ul {
@@ -34,6 +38,59 @@ h1 {
   border-bottom: 1px solid $line-color;
   width: 100%;
   padding-bottom: 3px;
+  margin: 0;
+}
+
+h2 {
+  color: $title-color;
+  font-weight: 700;
+  line-height: 42px;
+  font-size: $font-size;
+  margin: 0;
+}
+
+h3 {
+  color: #808080;
+  font-family: $font;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 42px;
+  text-transform: uppercase;
+  letter-spacing: -0.28px;
+  margin-bottom: 0;
+}
+
+button {
+  width: 127px;
+  height: 40px;
+  border-radius: 3px;
+  background-color: $button-color;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 42px;
+  color: $color-light;
+  border: none;
+  outline: none;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon{
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(82deg) brightness(105%) contrast(105%);
+}
+
+.link-small {
+  color: #56819f;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 42px;
+}
+
+.next-to {
+  vertical-align: middle;
+  display: inline-block;
 }
 
 /* sidebar */
@@ -47,15 +104,15 @@ h1 {
   z-index: 100;
 }
 
-.wrapper .sidebar h2{
-  color: $color-light;
-  text-transform: uppercase;
-  text-align: center;
-  margin-bottom: 30px;
+.sidebar > img {
+  padding-bottom: 20px;
+  padding-left: 20px;
 }
 
 .wrapper .sidebar ul{
+  padding-bottom: 12px;
   padding-left: 0;
+  border-bottom: solid 1px #333333;
 }
 
 .wrapper .sidebar ul li{
@@ -63,17 +120,36 @@ h1 {
 }
 
 .wrapper .sidebar ul li a{
-  color: $color-light;
+  color: $sidebar-link-color;
   font-weight: 300;
-  display: block;
+  padding-left: 13px;
 }
 
 .wrapper .sidebar ul li:hover{
   background-color: #282828;
+  border-left: solid 4px $button-color;
 }
 
 .wrapper .sidebar ul li:hover a{
-  color: #fff;
+  color: $color-light;
+}
+
+.icon-sidebar {
+  width: 16px;
+  height: 15px;
+  filter: invert(69%) sepia(0%) saturate(0%) hue-rotate(174deg) brightness(90%) contrast(81%);
+}
+
+ul li:hover .icon-sidebar{
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(82deg) brightness(105%) contrast(105%);
+}
+
+.your-manager {
+  padding-left: 20px;
+}
+
+.your-manager a {
+  padding-left: 10px;
 }
 
 /* header */
@@ -111,6 +187,69 @@ h1 {
   height: 100%;
   display: flex;
   align-items: center;
+  color: $color-header;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 42px;
+  padding: 0 20px;
+}
+
+.header .sum {
+  padding-left: 16px;
+}
+
+.wallet-icon {
+  padding-left: 18px;
+}
+
+.wallet-icon img {
+  width: 17px;
+  height: 18px;
+  filter: $header-svg;
+}
+
+.arrow-down img {
+  width: 11px;
+  height: 7px;
+  filter: $header-svg;
+}
+
+.arrow-down {
+  padding: 0 16px 0 20px;
+}
+
+.notification {
+  padding: 0 21px 0 20px;
+}
+
+.notification img {
+  width: 16px;
+  height: 17px;
+  filter: $header-svg;
+}
+
+.profile {
+  padding: 0 14px 0 19px;
+}
+
+.user {
+  padding-right: 18px;
+}
+
+.profile img {
+  width: 17px;
+  height: 17px;
+  filter: $header-svg;
+}
+
+.quit {
+  padding: 0 17px 0 21px;
+}
+
+.quit img {
+  width: 19px;
+  height: 15px;
+  filter: $header-svg;
 }
 
 /* main feed */
@@ -123,17 +262,14 @@ h1 {
 .wrapper .main_content .feed{
   color: #717171;
   line-height: 25px;
-  margin-top: 78px;
-}
-
-.wrapper .main_content .feed div{
-  margin-bottom: 20px;
+  margin-top: 18px;
+  z-index: 10;
 }
 
 /* post in feed */
 
 .post {
-  margin: 18px 18px;
+  margin: 0 18px;
   background-color: $color-light;
   display: block;
 }
@@ -143,13 +279,151 @@ h1 {
 .date-filter{
   border-bottom: 1px solid $line-color;
   width: 100%;
-  padding-bottom: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 108px;
+}
+
+.date-filter input{
+  width: 176px;
+  height: 40px;
+  border-radius: 3px;
+  border: 1px solid $line-color;
+}
+
+.date-filter input::placeholder{
+  color: #333333;
+  font-weight: 300;
+  line-height: 42px;
+  padding: 16px 14px 14px 17px;
+}
+
+.date-filter button {
+  width: 41px;
+  height: 40px;
+  margin-left: 13px;
+}
+
+.date-filter .icon {
+  width: 15px;
+  height: 15px;
 }
 
 .date-period{
   width: 325px;
   height: 40px;
   border-radius: 3px;
-  border: 1px solid #e3e3e3;
+  border: 1px solid $line-color;
   text-align: center;
+}
+
+.statistic-content-wrapper{
+  margin: 41px 188px 22px 184px;
+}
+
+.table-numbers-wrapper{
+  padding-bottom: 76px;
+}
+
+.table-numbers-wrapper table {
+  float: left;
+  //border-bottom: 1px solid $line-color;
+}
+
+.table-numbers{
+  width: 50%;
+  border-collapse: collapse;
+}
+
+.graph-picture{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.earnings-chart img {
+  margin-top: 40px;
+  margin-bottom: 55px;
+}
+
+/* links */
+
+.links-content-wrapper{
+  margin: 0 186px 10px 184px;
+}
+
+.button-wrapper{
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.links-content-wrapper button {
+  display: inline-block;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 23px 0;
+}
+
+.table-links {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table-links td {
+  border-top: solid 1px $line-color;
+  border-bottom: solid 1px $line-color;
+  padding: 22px 16px;
+}
+
+.table-links a{
+  line-height: 17px;
+  //margin-left: 250px;
+}
+
+.table-links tr:hover {
+  background-color: rgba(177, 191, 191, 0.18);
+}
+
+.table-links tr:hover img{
+  visibility: visible;
+}
+
+.links-links img {
+  width: 16px;
+  height: 8px;
+  visibility: hidden;
+  filter: invert(76%) sepia(50%) saturate(6061%) hue-rotate(348deg) brightness(100%) contrast(93%);
+}
+
+.trash-links img {
+  width: 14px;
+  height: 15px;
+  visibility: hidden;
+  filter: $header-svg;
+}
+
+.links-links {
+  float: left;
+  padding-right: 23px;
+}
+
+.trash-links {
+  float: right;
+}
+
+.icons {
+  display: inline-block;
+}
+
+.table-links td:nth-child(3){
+  text-align: center;
+}
+
+.table-links td:nth-child(1){
+  width: 450px;
 }

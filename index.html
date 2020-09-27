@@ -11,41 +11,271 @@
   <body>
     <div class="wrapper">
       <div class="sidebar">
-          <h2>Just do it</h2>
+          <img src="images/logo.png" alt="">
           <ul>
-              <li><a href="#">General</a></li>
-              <li><a href="#">Details</a></li>
-              <li><a href="#">Links</a></li>
-              <li><a href="#">Banners</a></li>
-              <li><a href="#">Personal Data</a></li>
-              <li><a href="#">Payout</a></li>
-              <li><a href="#">Postback</a></li>
+              <li>
+                <img src="images/icons/general.svg" alt="" class="icon-sidebar next-to">
+                <a href="#" class="text-sidebar next-to">General</a>
+              </li>
+              <li>
+                <img src="images/icons/details.svg" alt="" class="icon-sidebar next-to">
+                <a href="#" class="text-sidebar next-to">Details</a>
+              </li>
+              <li>
+                <img src="images/icons/links.svg" alt="" class="icon-sidebar next-to">
+                <a href="#" class="text-sidebar next-to">Links</a>
+              </li>
+              <li>
+                <img src="images/icons/banners.svg" alt="" class="icon-sidebar next-to">
+                <a href="#" class="text-sidebar next-to">Banners</a>
+              </li>
+              <li>
+                <img src="images/icons/personaldata.svg" alt="" class="icon-sidebar next-to">
+                <a href="#" class="text-sidebar next-to">Personal Data</a>
+              </li>
+              <li>
+                <img src="images/icons/payout.svg" alt="" class="icon-sidebar next-to">
+                <a href="#" class="text-sidebar next-to">Payout</a>
+              </li>
+              <li>
+                <img src="images/icons/postback.svg" alt="" class="icon-sidebar next-to">
+                <a href="#" class="text-sidebar next-to">Postback</a>
+              </li>
           </ul>
+          <div class="your-manager">
+            <h3>your manager</h3>
+            <img src="images/photo.png" alt="" class="next-to">
+            <a href="#" class="link-small next-to">Mikhael E.</a>
+          </div>
       </div>
       <div class="main_content">
           <div class="header">
             <ul>
-              <li>aaa</li>
-              <li>bbb</li>
-              <li>ccc</li>
-              <li>ddd</li>
-              <li>eee</li>
+              <li></li>
+              <li class="wallet">
+                <div class="wallet-icon">
+                  <img src="images/icons/wallet.svg" alt="" class="next-to">
+                </div>
+                <div class="sum next-to">
+                  $1,500.00
+                </div>
+                <div class="arrow-down">
+                  <img src="images/icons/arrow-down.svg" alt="">
+                </div>
+              </li>
+              <li>
+                <div class="notification">
+                  <img src="images/icons/notification.svg" alt="">
+                </div>
+              </li>
+              <li>
+                <div class="profile">
+                  <img src="images/icons/profile.svg" alt="" class="next-to">
+                </div>
+                <div class="user">
+                  <a href="#" class="link-small next-to">Leonardo di Caprio</a>
+                </div>
+              </li>
+              <li>
+                <div class="quit">
+                  <img src="images/icons/quit.svg" alt="">
+                </div>
+              </li>
             </ul>
           </div>
           <div class="feed">
             <div class="post statistic">
               <h1>general statistic</h1>
               <div class="date-filter">
-                <div class="date-period">
-                  
-                </div>
+                <input type="text" name="from-date" readonly placeholder="16.05.2016">
+                <input type="text" name="to-date" readonly placeholder="16.05.2016">
+                <button type="button" name="button">
+                  <img src="images/icons/refresh.svg" alt="" class="icon">
+                </button>
               </div>
-              <div class="">
-
+              <div class="statistic-content-wrapper">
+                <div class="table-numbers-wrapper">
+                  <table class="table-numbers">
+                    <tr>
+                      <td>Visit Signups</td>
+                      <td>124</td>
+                    </tr>
+                    <tr>
+                      <td>FTD</td>
+                      <td>445</td>
+                    </tr>
+                  </table>
+                  <table class="table-numbers">
+                    <tr>
+                      <td>Net deposit</td>
+                      <td>564</td>
+                    </tr>
+                    <tr>
+                      <td>Turn over</td>
+                      <td>432</td>
+                    </tr>
+                  </table>
+                </div>
+                <div class="earnings-chart">
+                  <h2>Earnings chart</h2>
+                  <div class="graph-picture">
+                    <img src="images/graph.png" alt="">
+                  </div>
+                </div>
               </div>
             </div>
             <div class="post links">
               <h1>links</h1>
+              <div class="links-content-wrapper">
+                <div class="button-wrapper">
+                  <button type="button" name="button">+ add new</button>
+                </div>
+                <table class="table-links">
+                  <tr>
+                    <td>Home Page</td>
+                    <td><a href="http://www.homepage.com">http://www.homepage.com</a></td>
+                    <td>
+                      <div class="icons">
+                        <div class="links-links">
+                          <img src="images/icons/links.svg" alt="" class="next-to">
+                        </div>
+                        <div class="trash-links">
+                          <img src="images/icons/trash.svg" alt="" class="next-to">
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Currently offer</td>
+                    <td><a href="http://www.currently.com">http://www.currently.com</a></td>
+                    <td>
+                      <div class="icons">
+                        <div class="links-links">
+                          <img src="images/icons/links.svg" alt="" class="next-to">
+                        </div>
+                        <div class="trash-links">
+                          <img src="images/icons/trash.svg" alt="" class="next-to">
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Blurpix</td>
+                    <td><a href="http://www.blurpix.com">http://www.blurpix.com</a></td>
+                    <td>
+                      <div class="icons">
+                        <div class="links-links">
+                          <img src="images/icons/links.svg" alt="" class="next-to">
+                        </div>
+                        <div class="trash-links">
+                          <img src="images/icons/trash.svg" alt="" class="next-to">
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Your Site</td>
+                    <td><a href="http://www.yoursite.com">http://www.yoursite.com</a></td>
+                    <td>
+                      <div class="icons">
+                        <div class="links-links">
+                          <img src="images/icons/links.svg" alt="" class="next-to">
+                        </div>
+                        <div class="trash-links">
+                          <img src="images/icons/trash.svg" alt="" class="next-to">
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Google</td>
+                    <td><a href="http://www.google.com">http://www.google.com</a></td>
+                    <td>
+                      <div class="icons">
+                        <div class="links-links">
+                          <img src="images/icons/links.svg" alt="" class="next-to">
+                        </div>
+                        <div class="trash-links">
+                          <img src="images/icons/trash.svg" alt="" class="next-to">
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Facebook</td>
+                    <td><a href="http://www.facebook.com">http://www.facebook.com</a></td>
+                    <td>
+                      <div class="icons">
+                        <div class="links-links">
+                          <img src="images/icons/links.svg" alt="" class="next-to">
+                        </div>
+                        <div class="trash-links">
+                          <img src="images/icons/trash.svg" alt="" class="next-to">
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Dashboard</td>
+                    <td><a href="http://www.dashboard.com">http://www.dashboard.com</a></td>
+                    <td>
+                      <div class="icons">
+                        <div class="links-links">
+                          <img src="images/icons/links.svg" alt="" class="next-to">
+                        </div>
+                        <div class="trash-links">
+                          <img src="images/icons/trash.svg" alt="" class="next-to">
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Blurax</td>
+                    <td><a href="http://www.blurax.com">http://www.blurax.com</a></td>
+                    <td>
+                      <div class="icons">
+                        <div class="links-links">
+                          <img src="images/icons/links.svg" alt="" class="next-to">
+                        </div>
+                        <div class="trash-links">
+                          <img src="images/icons/trash.svg" alt="" class="next-to">
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Piece of Wine</td>
+                    <td><a href="http://www.pieceofwine.com">http://www.pieceofwine.com</a></td>
+                    <td>
+                      <div class="icons">
+                        <div class="links-links">
+                          <img src="images/icons/links.svg" alt="" class="next-to">
+                        </div>
+                        <div class="trash-links">
+                          <img src="images/icons/trash.svg" alt="" class="next-to">
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Twitter</td>
+                    <td><a href="http://www.twitter.com">http://www.twitter.com</a></td>
+                    <td>
+                      <div class="icons">
+                        <div class="links-links">
+                          <img src="images/icons/links.svg" alt="" class="next-to">
+                        </div>
+                        <div class="trash-links">
+                          <img src="images/icons/trash.svg" alt="" class="next-to">
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                </table>
+                <div class="button-wrapper">
+                  <button type="button" name="button">+ add new</button>
+                </div>
+              </div>
             </div>
         </div>
       </div>
