@@ -8,24 +8,64 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h1>
-    <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
+    <h1>(h1) Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h1>
+    <h2>(h2) Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
+    <h3>(h3) Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
 
     <ul>
-      <li>Lorem ipsum dolor, consectetur <a href="#">consectetur adipiscing elit.</a>.</li>
-      <li>Lorem ipsum dolor <strong>sit amet</strong></li>
-      <li>Lorem ipsum dolor <strong>sit amet</strong>, consectetur <a href="#">consectetur adipiscing elit.</a>.</li>
+      <li>Lorem ipsum dolor, consectetur <a href="#">consectetur adipiscing elit.(normal link)</a>.</li>
+      <li>Lorem ipsum dolor sit amet, consectetur <a href="#" class="link-small">consectetur adipiscing elit.(link-small)</a>.</li>
     </ul>
 
     <br><br>
-    <!-- buttons -->
+    <h3>buttons:</h3>
     <button type="text" name="button">I'm a button</button>
-    <button type="text" name="button"></button>
-
-
+    <br>
+    <button type="button" name="button" class="refresh-button">
+      <img src="images/icons/refresh.svg" alt="" class="icon-on-button">
+    </button>
     <br><br>
-    <!-- icons -->
+    <h3>sidebar:</h3>
 
-    <img class="icon" src="images/icons/arrow-down-small.svg" alt="">
+<div class="sidebar">
+  <ul>
+      <li>
+        <img src="images/icons/general.svg" alt="" class="icon-sidebar next-to">
+        <a href="#" class="text-sidebar next-to">General</a>
+      </li>
+  </ul>
+</div>
+    <br><br>
+<div class="links-content-wrapper">
+  <table class="table-links">
+    <tr>
+      <td>Home Page</td>
+      <td><a href="http://www.homepage.com">http://www.homepage.com</a></td>
+      <td>
+        <div class="icons">
+          <div class="links-links">
+            <img src="images/icons/links.svg" alt="" class="next-to">
+          </div>
+          <div class="trash-links">
+            <img src="images/icons/trash.svg" alt="" class="next-to">
+          </div>
+        </div>
+      </td>
+    </tr>
+  </table>
+
+<br><br>
+
+<ul>
+  <li class="wallet">
+    <div class="wallet-icon">
+      <img src="images/icons/wallet.svg" alt="" class="next-to color-grey">
+    </div>
+    <div class="arrow-down">
+      <img src="images/icons/arrow-down.svg" alt="" class="color-grey next-to">
+    </div>
+  </li>
+</ul>
+
   </body>
 </html>
