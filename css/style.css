@@ -916,6 +916,7 @@ a {
   text-decoration: none;
   color: #56819f;
   font-weight: 300;
+  transition: all 0.5s;
 }
 
 ul {
@@ -974,6 +975,11 @@ button {
       align-items: center;
   -ms-flex-pack: center;
       justify-content: center;
+  transition: all 0.5s;
+}
+
+button:hover {
+  background-color: #ffa200;
 }
 
 .icon-on-button {
@@ -986,6 +992,11 @@ button {
   color: #56819f;
   font-size: 14px;
   font-weight: 300;
+  transition: all 0.5s;
+}
+
+.link-small:hover {
+  color: #ffa200;
 }
 
 .next-to {
@@ -1041,6 +1052,15 @@ button {
       justify-content: center;
 }
 
+.mobile-version li {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+}
+
 .sidebar ul {
   padding: 20px 0 12px 0;
   border-bottom: solid 1px #333333;
@@ -1079,6 +1099,8 @@ ul li:hover .icon-sidebar {
 .manager-photo {
   -ms-flex-pack: start;
       justify-content: flex-start;
+  -ms-flex-align: center;
+      align-items: center;
 }
 
 .manager-photo a {
@@ -1098,6 +1120,19 @@ ul li:hover .icon-sidebar {
 .mobile-version .manager-photo {
   -ms-flex-pack: center;
       justify-content: center;
+}
+
+.photo-manager-big {
+  position: relative;
+}
+
+.photo-manager-big::after {
+  position: absolute;
+  content: '';
+  width: 12px;
+  height: 11px;
+  background-color: #04ae00;
+  border-radius: 50%;
 }
 
 /* header */
@@ -1154,8 +1189,15 @@ ul li:hover .icon-sidebar {
   padding-left: 16px;
 }
 
+@media (max-width: 389px) {
+  .header .sum {
+    display: none;
+  }
+}
+
 .wallet-icon {
   padding-left: 18px;
+  padding-bottom: 8px;
 }
 
 .color-grey {
@@ -1173,7 +1215,7 @@ ul li:hover .icon-sidebar {
 }
 
 .arrow-down {
-  padding: 0 16px 0 20px;
+  padding: 0 16px 5px 20px;
 }
 
 .notification {
@@ -1186,11 +1228,17 @@ ul li:hover .icon-sidebar {
 }
 
 .profile {
-  padding: 0 14px 0 19px;
+  padding: 0 14px 5px 19px;
 }
 
 .user {
   padding-right: 18px;
+}
+
+@media (max-width: 464px) {
+  .user {
+    display: none;
+  }
 }
 
 .profile img {
@@ -1237,6 +1285,8 @@ ul li:hover .icon-sidebar {
 .date-filter {
   border-bottom: 1px solid #e3e3e3;
   width: 100%;
+  padding-bottom: 20px;
+  padding-top: 20px;
   -ms-flex-align: center;
       align-items: center;
   -ms-flex-pack: center;
@@ -1244,31 +1294,129 @@ ul li:hover .icon-sidebar {
   height: 108px;
 }
 
+@media (max-width: 453px) {
+  .date-filter {
+    padding-top: 20px;
+  }
+}
+
 .date-filter input {
-  width: 176px;
+  width: 325px;
   height: 40px;
   border-radius: 3px;
   border: 1px solid #e3e3e3;
 }
 
-.date-filter input:-ms-input-placeholder {
-  color: #333333;
-  font-weight: 300;
-  line-height: 42px;
-  padding: 16px 14px 14px 17px;
+@media (max-width: 410px) {
+  .date-filter input {
+    width: 293px;
+    height: 36px;
+  }
 }
 
-.date-filter input::placeholder {
-  color: #333333;
-  font-weight: 300;
-  line-height: 42px;
-  padding: 16px 14px 14px 17px;
+@media (max-width: 360px) {
+  .date-filter input {
+    width: 240px;
+    height: 30px;
+  }
+}
+
+.input-placeholder {
+  position: relative;
+}
+
+.placeholder {
+  position: absolute;
+  pointer-events: none;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  font-size: 14px;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+}
+
+.date-start {
+  padding-left: 17px;
+  padding-right: 81px;
+}
+
+@media (max-width: 410px) {
+  .date-start {
+    padding-left: 10px;
+    padding-right: 50px;
+  }
+}
+
+@media (max-width: 360px) {
+  .date-start {
+    padding-left: 5px;
+    padding-right: 25px;
+  }
+}
+
+.divider {
+  position: absolute;
+  content: '';
+  height: 29px;
+  width: 1px;
+  background: #e3e3e3;
+  left: 149px;
+}
+
+@media (max-width: 410px) {
+  .divider {
+    left: 120px;
+    height: 26px;
+  }
+}
+
+@media (max-width: 360px) {
+  .divider {
+    height: 22px;
+    left: 90px;
+  }
+}
+
+.calendar {
+  padding-left: 63px;
+}
+
+@media (max-width: 410px) {
+  .calendar {
+    padding-left: 65px;
+  }
+}
+
+@media (max-width: 360px) {
+  .calendar {
+    padding-left: 53px;
+  }
+}
+
+.calendar img {
+  width: 13px;
+  height: 13px;
 }
 
 .refresh-button {
   width: 41px;
   height: 40px;
-  margin-left: 13px;
+}
+
+@media (max-width: 767px) {
+  .refresh-button {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@media (max-width: 767px) {
+  .refresh {
+    padding-top: 10px;
+  }
 }
 
 .date-period {
@@ -1335,13 +1483,15 @@ ul li:hover .icon-sidebar {
   }
 }
 
-.graph-picture {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-align: center;
-      align-items: center;
-  -ms-flex-pack: center;
-      justify-content: center;
+.scroll-wrapper {
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+}
+
+.scroll-wrapper img {
+  width: auto;
+  max-width: 100%;
 }
 
 .earnings-chart {
@@ -1380,6 +1530,10 @@ ul li:hover .icon-sidebar {
   }
 }
 
+.link-address {
+  transition: all 0.5s;
+}
+
 @media (max-width: 991px) {
   .link-address {
     font-size: 14px;
@@ -1390,6 +1544,10 @@ ul li:hover .icon-sidebar {
   .link-address {
     text-align: center;
   }
+}
+
+.link-address a:hover {
+  color: #ffa200;
 }
 
 .links-content-wrapper button {
@@ -1429,11 +1587,23 @@ ul li:hover .icon-sidebar {
   filter: invert(76%) sepia(50%) saturate(6061%) hue-rotate(348deg) brightness(100%) contrast(93%);
 }
 
+@media (max-width: 766px) {
+  .links-links img {
+    visibility: visible;
+  }
+}
+
 .trash-links img {
   width: 14px;
   height: 15px;
   visibility: hidden;
   filter: invert(57%) sepia(0%) saturate(7363%) hue-rotate(334deg) brightness(111%) contrast(88%);
+}
+
+@media (max-width: 766px) {
+  .trash-links img {
+    visibility: visible;
+  }
 }
 
 .links-links {
@@ -1446,5 +1616,21 @@ ul li:hover .icon-sidebar {
 
 .icons {
   text-align: center;
+}
+
+.icons a:hover img {
+  filter: invert(64%) sepia(32%) saturate(2403%) hue-rotate(359deg) brightness(101%) contrast(106%);
+}
+
+.icons img {
+  transition: all 0.5s;
+}
+
+.links-bottom {
+  padding-top: 23px;
+}
+
+.links-upper {
+  padding-bottom: 23px;
 }
 /*# sourceMappingURL=style.css.map */

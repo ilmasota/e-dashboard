@@ -94,50 +94,67 @@
     <div class="container feed">
       <div class="post statistic">
         <h1>general statistic</h1>
-        <div class="date-filter row">
-          <input type="text" name="from-date" readonly placeholder="16.05.2016">
-          <input type="text" name="to-date" readonly placeholder="16.05.2016">
-          <button type="button" name="button" class="refresh-button">
-            <img src="images/icons/refresh.svg" alt="" class="icon-on-button">
-          </button>
-        </div>
+        <form class="" action="" method="post">
+          <div class="date-filter row">
+            <div class="input-placeholder">
+              <input type="text">
+              <div class="placeholder row">
+                <div class="date-start">
+                  16.05.2016
+                </div>
+                <span class="divider"></span>
+                <div class="date-end">
+                  16.05.2016
+                </div>
+                <div class="calendar">
+                  <img src="images/icons/calendar.svg" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="button-wrapper refresh col-sm-12 col-md-1">
+              <button type="submit" name="button" class="refresh-button">
+                <img src="images/icons/refresh.svg" alt="" class="icon-on-button">
+              </button>
+            </div>
+          </div>
+        </form>
         <div class="wrapper category-value">
           <div class="row numbers">
-            <div class="col-sm-6 col-lg-2 category">
+            <div class="col-sm-6 col-xl-2 category">
               Visit Signups
             </div>
-            <div class="col-sm-6 col-lg-2 value">
+            <div class="col-sm-6 col-xl-2 value">
               125
             </div>
-            <div class="col-sm-12 col-lg-2"></div>
-            <div class="col-sm-6 col-lg-2 category">
+            <div class="col-sm-12 col-xl-2"></div>
+            <div class="col-sm-6 col-xl-2 category">
               Net deposit
             </div>
-            <div class="col-sm-6 col-lg-2 value">
+            <div class="col-sm-6 col-xl-2 value">
               564
             </div>
           </div>
           <div class="row numbers">
-            <div class="col-sm-6 col-lg-2 category">
+            <div class="col-sm-6 col-xl-2 category">
               FTD
             </div>
-            <div class="col-sm-6 col-lg-2 value">
+            <div class="col-sm-6 col-xl-2 value">
               445
             </div>
-            <div class="col-sm-12 col-lg-2"></div>
-            <div class="col-sm-6 col-lg-2 category">
+            <div class="col-sm-12 col-xl-2"></div>
+            <div class="col-sm-6 col-xl-2 category">
               Turn over
             </div>
-            <div class="col-sm-6 col-lg-2 value">
+            <div class="col-sm-6 col-xl-2 value">
               432
             </div>
         </div>
       </div>
       <div class="earnings-chart wrapper">
         <h2>Earnings chart</h2>
-        <!-- <div class="graph-picture">
+        <div class="scroll-wrapper">
           <img src="images/graph.png" alt="">
-        </div> -->
+        </div>
       </div>
     </div>
   </div>
@@ -145,7 +162,7 @@
     <div class="post links">
       <h1>links</h1>
       <div class="wrapper">
-        <div class="button-wrapper">
+        <div class="button-wrapper links-upper">
           <button type="button" name="button">+ add new</button>
         </div>
         <div class="table-links">
@@ -158,157 +175,199 @@
             </div>
             <div class="col-sm-12 col-lg-2 icons">
               <div class="links-links">
-                <img src="images/icons/links.svg" alt="" class="">
+                <a href="#">
+                  <img src="images/icons/links.svg" alt="" class="">
+                </a>
               </div>
               <div class="trash-links">
-                <img src="images/icons/trash.svg" alt="" class="">
+                <a href="#">
+                  <img src="images/icons/trash.svg" alt="" class="">
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="row link">
+            <div class="col-sm-12 col-lg-5 link-title">
+              Currently Offer
+            </div>
+            <div class="col-sm-12 col-lg-5 link-address">
+              <a href="http://www.currently.com">http://www.currently.com</a>
+            </div>
+            <div class="col-sm-12 col-lg-2 icons">
+              <div class="links-links">
+                <a href="#">
+                  <img src="images/icons/links.svg" alt="" class="">
+                </a>
+              </div>
+              <div class="trash-links">
+                <a href="#">
+                  <img src="images/icons/trash.svg" alt="" class="">
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="row link">
+            <div class="col-sm-12 col-lg-5 link-title">
+              Blurpix
+            </div>
+            <div class="col-sm-12 col-lg-5 link-address">
+              <a href="http://www.blurpix.com">http://www.blurpix.com</a>
+            </div>
+            <div class="col-sm-12 col-lg-2 icons">
+              <div class="links-links">
+                <a href="#">
+                  <img src="images/icons/links.svg" alt="" class="">
+                </a>
+              </div>
+              <div class="trash-links">
+                <a href="#">
+                  <img src="images/icons/trash.svg" alt="" class="">
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="row link">
+            <div class="col-sm-12 col-lg-5 link-title">
+              Your Site
+            </div>
+            <div class="col-sm-12 col-lg-5 link-address">
+              <a href="http://www.yoursite.com">http://www.yoursite.com</a>
+            </div>
+            <div class="col-sm-12 col-lg-2 icons">
+              <div class="links-links">
+                <a href="#">
+                  <img src="images/icons/links.svg" alt="" class="">
+                </a>
+              </div>
+              <div class="trash-links">
+                <a href="#">
+                  <img src="images/icons/trash.svg" alt="" class="">
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="row link">
+            <div class="col-sm-12 col-lg-5 link-title">
+              Google
+            </div>
+            <div class="col-sm-12 col-lg-5 link-address">
+              <a href="http://www.google.com">http://www.google.com</a>
+            </div>
+            <div class="col-sm-12 col-lg-2 icons">
+              <div class="links-links">
+                <a href="#">
+                  <img src="images/icons/links.svg" alt="" class="">
+                </a>
+              </div>
+              <div class="trash-links">
+                <a href="#">
+                  <img src="images/icons/trash.svg" alt="" class="">
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="row link">
+            <div class="col-sm-12 col-lg-5 link-title">
+              Facebook
+            </div>
+            <div class="col-sm-12 col-lg-5 link-address">
+              <a href="http://www.facebook.com">http://www.facebook.com</a>
+            </div>
+            <div class="col-sm-12 col-lg-2 icons">
+              <div class="links-links">
+                <a href="#">
+                  <img src="images/icons/links.svg" alt="" class="">
+                </a>
+              </div>
+              <div class="trash-links">
+                <a href="#">
+                  <img src="images/icons/trash.svg" alt="" class="">
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="row link">
+            <div class="col-sm-12 col-lg-5 link-title">
+              Dashboard
+            </div>
+            <div class="col-sm-12 col-lg-5 link-address">
+              <a href="http://www.dashboard.com">http://www.dashboard.com</a>
+            </div>
+            <div class="col-sm-12 col-lg-2 icons">
+              <div class="links-links">
+                <a href="#">
+                  <img src="images/icons/links.svg" alt="" class="">
+                </a>
+              </div>
+              <div class="trash-links">
+                <a href="#">
+                  <img src="images/icons/trash.svg" alt="" class="">
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="row link">
+            <div class="col-sm-12 col-lg-5 link-title">
+              Blurax
+            </div>
+            <div class="col-sm-12 col-lg-5 link-address">
+              <a href="http://www.blurax.com">http://www.blurax.com</a>
+            </div>
+            <div class="col-sm-12 col-lg-2 icons">
+              <div class="links-links">
+                <a href="#">
+                  <img src="images/icons/links.svg" alt="" class="">
+                </a>
+              </div>
+              <div class="trash-links">
+                <a href="#">
+                  <img src="images/icons/trash.svg" alt="" class="">
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="row link">
+            <div class="col-sm-12 col-lg-5 link-title">
+              Piece of Wine
+            </div>
+            <div class="col-sm-12 col-lg-5 link-address">
+              <a href="http://www.pieceofwine.com">http://www.pieceofwine.com</a>
+            </div>
+            <div class="col-sm-12 col-lg-2 icons">
+              <div class="links-links">
+                <a href="#">
+                  <img src="images/icons/links.svg" alt="" class="">
+                </a>
+              </div>
+              <div class="trash-links">
+                <a href="#">
+                  <img src="images/icons/trash.svg" alt="" class="">
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="row link">
+            <div class="col-sm-12 col-lg-5 link-title">
+              Twitter
+            </div>
+            <div class="col-sm-12 col-lg-5 link-address">
+              <a href="http://www.twitter.com">http://www.twitter.com</a>
+            </div>
+            <div class="col-sm-12 col-lg-2 icons">
+              <div class="links-links">
+                <a href="#">
+                  <img src="images/icons/links.svg" alt="" class="">
+                </a>
+              </div>
+              <div class="trash-links">
+                <a href="#">
+                  <img src="images/icons/trash.svg" alt="" class="">
+                </a>
               </div>
             </div>
           </div>
         </div>
-        <!-- <table class="table-links">
-          <tr>
-            <td>Home Page</td>
-            <td><a href="http://www.homepage.com">http://www.homepage.com</a></td>
-            <td>
-              <div class="icons">
-                <div class="links-links">
-                  <img src="images/icons/links.svg" alt="" class="next-to">
-                </div>
-                <div class="trash-links">
-                  <img src="images/icons/trash.svg" alt="" class="next-to">
-                </div>
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <td>Currently offer</td>
-            <td><a href="http://www.currently.com">http://www.currently.com</a></td>
-            <td>
-              <div class="icons">
-                <div class="links-links">
-                  <img src="images/icons/links.svg" alt="" class="next-to">
-                </div>
-                <div class="trash-links">
-                  <img src="images/icons/trash.svg" alt="" class="next-to">
-                </div>
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <td>Blurpix</td>
-            <td><a href="http://www.blurpix.com">http://www.blurpix.com</a></td>
-            <td>
-              <div class="icons">
-                <div class="links-links">
-                  <img src="images/icons/links.svg" alt="" class="next-to">
-                </div>
-                <div class="trash-links">
-                  <img src="images/icons/trash.svg" alt="" class="next-to">
-                </div>
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <td>Your Site</td>
-            <td><a href="http://www.yoursite.com">http://www.yoursite.com</a></td>
-            <td>
-              <div class="icons">
-                <div class="links-links">
-                  <img src="images/icons/links.svg" alt="" class="next-to">
-                </div>
-                <div class="trash-links">
-                  <img src="images/icons/trash.svg" alt="" class="next-to">
-                </div>
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <td>Google</td>
-            <td><a href="http://www.google.com">http://www.google.com</a></td>
-            <td>
-              <div class="icons">
-                <div class="links-links">
-                  <img src="images/icons/links.svg" alt="" class="next-to">
-                </div>
-                <div class="trash-links">
-                  <img src="images/icons/trash.svg" alt="" class="next-to">
-                </div>
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <td>Facebook</td>
-            <td><a href="http://www.facebook.com">http://www.facebook.com</a></td>
-            <td>
-              <div class="icons">
-                <div class="links-links">
-                  <img src="images/icons/links.svg" alt="" class="next-to">
-                </div>
-                <div class="trash-links">
-                  <img src="images/icons/trash.svg" alt="" class="next-to">
-                </div>
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <td>Dashboard</td>
-            <td><a href="http://www.dashboard.com">http://www.dashboard.com</a></td>
-            <td>
-              <div class="icons">
-                <div class="links-links">
-                  <img src="images/icons/links.svg" alt="" class="next-to">
-                </div>
-                <div class="trash-links">
-                  <img src="images/icons/trash.svg" alt="" class="next-to">
-                </div>
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <td>Blurax</td>
-            <td><a href="http://www.blurax.com">http://www.blurax.com</a></td>
-            <td>
-              <div class="icons">
-                <div class="links-links">
-                  <img src="images/icons/links.svg" alt="" class="next-to">
-                </div>
-                <div class="trash-links">
-                  <img src="images/icons/trash.svg" alt="" class="next-to">
-                </div>
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <td>Piece of Wine</td>
-            <td><a href="http://www.pieceofwine.com">http://www.pieceofwine.com</a></td>
-            <td>
-              <div class="icons">
-                <div class="links-links">
-                  <img src="images/icons/links.svg" alt="" class="next-to">
-                </div>
-                <div class="trash-links">
-                  <img src="images/icons/trash.svg" alt="" class="next-to">
-                </div>
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <td>Twitter</td>
-            <td><a href="http://www.twitter.com">http://www.twitter.com</a></td>
-            <td>
-              <div class="icons">
-                <div class="links-links">
-                  <img src="images/icons/links.svg" alt="" class="next-to">
-                </div>
-                <div class="trash-links">
-                  <img src="images/icons/trash.svg" alt="" class="next-to">
-                </div>
-              </div>
-            </td>
-          </tr>
-        </table> -->
-        <div class="button-wrapper">
+        <div class="button-wrapper links-bottom">
           <button type="button" name="button">+ add new</button>
         </div>
       </div>
